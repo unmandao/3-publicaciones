@@ -977,15 +977,15 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
 11
 </pre></td>
   <td class="code"><pre>&lt;svg width=&quot;80&quot; height=&quot;20&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-  &lt;symbol id=&quot;dot&quot; width=&quot;10&quot; height=&quot;10&quot;&gt;
+  &lt;symbol id=&quot;dot&quot; y=&quot;5&quot; width=&quot;10&quot; height=&quot;10&quot;&gt;
     &lt;circle cx=&quot;5&quot; cy=&quot;5&quot; r=&quot;5&quot; /&gt;
   &lt;/symbol&gt;
   &lt;path d=&quot;M0,10 h80 M10,0 v20 M25,0 v20 M40,0 v20 M55,0 v20 M70,0 v20&quot; fill=&quot;none&quot; stroke=&quot;pink&quot; /&gt;
-  &lt;use href=&quot;#dot&quot; x=&quot;5&quot;  y=&quot;5&quot; /&gt;
-  &lt;use href=&quot;#dot&quot; x=&quot;20&quot; y=&quot;5&quot; /&gt;
-  &lt;use href=&quot;#dot&quot; x=&quot;35&quot; y=&quot;5&quot; /&gt;
-  &lt;use href=&quot;#dot&quot; x=&quot;50&quot; y=&quot;5&quot; /&gt;
-  &lt;use href=&quot;#dot&quot; x=&quot;65&quot; y=&quot;5&quot; /&gt;
+  &lt;use href=&quot;#dot&quot; x=&quot;5&quot; /&gt;
+  &lt;use href=&quot;#dot&quot; x=&quot;20&quot; /&gt;
+  &lt;use href=&quot;#dot&quot; x=&quot;35&quot; /&gt;
+  &lt;use href=&quot;#dot&quot; x=&quot;50&quot; /&gt;
+  &lt;use href=&quot;#dot&quot; x=&quot;65&quot; /&gt;
 &lt;/svg&gt;</pre></td>
 </tr></table></code></pre>
 </div>
@@ -1012,7 +1012,12 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="svg">Unresolved directive in 4-como/0-index.adoc - include::../../../../../../../../src/0-itinerario/4-elementos/2-compuestos/1-grupo.svg[]</code></pre>
+<pre class="CodeRay highlight"><code data-lang="svg">&lt;svg viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;g fill=&quot;white&quot; stroke=&quot;green&quot; stroke-width=&quot;5&quot;&gt;
+    &lt;circle cx=&quot;40&quot; cy=&quot;40&quot; r=&quot;25&quot; /&gt;
+    &lt;circle cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;25&quot; /&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -1619,11 +1624,8 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="svg">&lt;svg version=&quot;1.1&quot; width=&quot;300&quot; height=&quot;200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-    &lt;circle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;25&quot; style=&quot;stroke: none; fill: #00cc00;&quot;&gt;
-        &lt;set attributeName=&quot;r&quot; attributeType=&quot;XML&quot;
-             to=&quot;100&quot;
-             begin=&quot;1s&quot;  /&gt;
-
+    &lt;circle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;25&quot; stroke=&quot;none&quot; fill=&quot;green&quot;&gt;
+        &lt;set attributeName=&quot;r&quot; to=&quot;100&quot; begin=&quot;1s&quot; attributeType=&quot;XML&quot; /&gt;
     &lt;/circle&gt;
 &lt;/svg&gt;</code></pre>
 </div>
@@ -1645,16 +1647,13 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="svg">&lt;svg version=&quot;1.1&quot; width=&quot;150&quot; height=&quot;120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
     &lt;circle cx=&quot;-25&quot; cy=&quot;30&quot; r=&quot;25&quot; fill=&quot;green&quot;&gt;
-        &lt;animate attributeName=&quot;cx&quot;
-                 from=&quot;-25&quot;  to=&quot;175&quot;
-                 begin=&quot;0s&quot; dur=&quot;1s&quot;
-                 fill=&quot;remove&quot; repeatCount=&quot;indefinite&quot;/&gt;
+        &lt;animate attributeName=&quot;cx&quot; from=&quot;-25&quot; to=&quot;205&quot;
+            begin=&quot;0s&quot; dur=&quot;3s&quot; repeatCount=&quot;indefinite&quot; /&gt;
     &lt;/circle&gt;
-    &lt;text &gt;
-        &lt;animate attributeName=&quot;cx&quot;
-                 from=&quot;-25&quot;  to=&quot;175&quot;
-                 begin=&quot;0s&quot; dur=&quot;1s&quot;
-                 fill=&quot;remove&quot; repeatCount=&quot;indefinite&quot;/&gt;
+    &lt;text x=&quot;-90&quot; y=&quot;70&quot; fill=&quot;red&quot;&gt;
+        &lt;animate attributeName=&quot;x&quot; from=&quot;-90&quot; to=&quot;140&quot;
+            begin=&quot;0s&quot; dur=&quot;3s&quot; repeatCount=&quot;indefinite&quot; /&gt;
+        ¿a dónde vas?
     &lt;/text&gt;
 &lt;/svg&gt;</code></pre>
 </div>
@@ -1699,24 +1698,19 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
   &lt;rect x=&quot;1&quot; y=&quot;1&quot; width=&quot;498&quot; height=&quot;298&quot;
         fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;2&quot; /&gt;
 
-  &lt;!-- Draw the outline of the motion path in blue, along
-          with three small circles at the start, middle and end. --&gt;
   &lt;path id=&quot;path1&quot; d=&quot;M100,250 C 100,50 400,50 400,250&quot;
         fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;7.06&quot;  /&gt;
   &lt;circle cx=&quot;100&quot; cy=&quot;250&quot; r=&quot;17.64&quot; fill=&quot;blue&quot;  /&gt;
   &lt;circle cx=&quot;250&quot; cy=&quot;100&quot; r=&quot;17.64&quot; fill=&quot;blue&quot;  /&gt;
   &lt;circle cx=&quot;400&quot; cy=&quot;250&quot; r=&quot;17.64&quot; fill=&quot;blue&quot;  /&gt;
 
-  &lt;!-- Here is a triangle which will be moved about the motion path.
-       It is defined with an upright orientation with the base of
-       the triangle centered horizontally just above the origin. --&gt;
   &lt;path d=&quot;M-25,-12.5 L25,-12.5 L 0,-87.5 z&quot;
         fill=&quot;yellow&quot; stroke=&quot;red&quot; stroke-width=&quot;7.06&quot;  &gt;
-    &lt;!-- Define the motion path animation --&gt;
     &lt;animateMotion dur=&quot;6s&quot; repeatCount=&quot;indefinite&quot; rotate=&quot;auto&quot; &gt;
        &lt;mpath xlink:href=&quot;#path1&quot;/&gt;
     &lt;/animateMotion&gt;
   &lt;/path&gt;
+
 &lt;/svg&gt;</code></pre>
 </div>
 </div></div></td>
@@ -1839,7 +1833,7 @@ Códigos disponibles en <a href="https://github.com/USantaTecla-tech-svg">git</a
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1<br>
-Last updated 2022-03-21 18:26:14 +0100
+Last updated 2022-11-14 10:54:06 +0100
 </div>
 </div>
 <style>
